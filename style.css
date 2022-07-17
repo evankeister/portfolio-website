@@ -1,0 +1,335 @@
+/* General CSS */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    background: #fff;
+    color: #000;
+    overflow-x: hidden;
+    /*
+    background-color: #d3d3d3;
+    background-image: linear-gradient(315deg, #d3d3d3 0%, #7f8c8d 74%);
+    */
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Links */
+
+a {
+    text-decoration: none !important;
+    color: #999;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+ color: #0dcaf0 !important; 
+}
+
+/* Navbar */
+
+.navbar {
+    position: relative;
+    background-color: orange;
+}   
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar-light .navbar-toggler:focus {
+    color: #000;
+    box-shadow: 0 0 0 2px;
+}
+
+.navbar ul li {
+    position: relative;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+}
+
+.navbar ul li a {
+    position: relative;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: rgb(45, 44, 44);
+}
+
+/* banner content */
+
+.banner-section {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.banner-section .banner-title {
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.banner-section .banner-desc {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.banner-section .banner-btn {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a5a7a7;
+}
+
+.logo-name {
+    font-weight: 1000;
+}
+
+.logo-name:hover {
+    color:#0dcaf0;
+    transition: all 0.5s ease-in-out;
+}
+
+.outer-circle {
+    position: relative;
+    padding-left: 10rem;
+    width: 50rem;
+    height: 50rem;
+    background: #ff4800;
+    border-radius: 50%;
+    animation: animateOuterCircle 15s ease infinite;
+    display: grid;
+    justify-content: center;
+}
+
+@keyframes animateOuterCircle {
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* About Section */
+
+.about-section {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.about-section .container {
+    padding-bottom: 3rem;
+}
+
+.about-section .col-lg-6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.about-section .about-title {
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: underline;
+}
+
+.about-section .about-desc {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 0rem;
+}
+
+.about-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 1%;
+}
+
+.work {
+    box-shadow: 0 1rem 1rem 0.5rem rgba(255, 72, 0, 0.5);
+}
+
+.courses {
+    box-shadow: 0 1rem 1rem 0.5rem rgba(15, 186, 212, 0.75);
+}
+
+.pl {
+    box-shadow: 0 1rem 1rem 0.5rem rgba(207, 13, 165, 0.75);
+}
+
+.volunteer {
+    box-shadow: 0 1rem 1rem 0.5rem rgba(13, 68, 207, 0.75);
+}
+
+/* Experience List Elements */
+.about-desc-list {
+    margin: 0;
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+    display: grid;
+}
+
+.about-desc-list li {
+    float: left;
+    margin-right: 10px;
+    list-style-type: circle;
+    font-size: 17px;
+}
+
+.course-header {
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Contact Section */
+
+.email {
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.contact-section {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: #f7f7f7;
+}
+
+.contact-section .contact-title {
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.contact-section p {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+/* Portfolio */
+.portfolio-section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-section .coming-soon {
+   font-family: "Poppins", sans-serif;
+   font-size: 10rem;
+   font-style: italic;
+   font-weight: 100;
+}
+
+/* footer */
+
+.footer {
+    position: rel;
+    padding-top: 50px;
+    background: #f7f7f7;
+    background: orange;
+}
+
+.footer .social-media .footer-list {
+    position: relative;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+
+.footer .social-media .footer-list li {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer .social-media .footer-list li a {
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    color: #000;
+}
+
+
+/* Button Styling */
+
+.btn {
+   padding: 0.8rem 2rem;
+   border-radius: 2rem;
+   border: 1px solid #000;
+   text-transform: capitalize;
+   font-family: "Poppins", sans-serif;
+}
+
+.btn a:hover {
+    color: white;
+}
+
+.btn:hover {
+    box-shadow: 0 1rem 1rem rgba(255, 72, 0, 0.5);
+    color: white;
+    background-color: #000;
+    border: none;
+}
+
+.btn-primary {
+    background: #ff4800;
+    border: none;
+    margin: 3rem -1rem;
+}
+
+.btn-primary:hover {
+    color:white;
+    background: #000;
+}
+
+.resume {
+    color: white;
+}
