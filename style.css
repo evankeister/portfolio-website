@@ -214,10 +214,25 @@ a {
 
 /* Contact Section */
 
+
+
+.patagonia {
+    border-radius: 1%;
+    box-shadow: 1em 1em 1em rgba(255, 165, 0);
+    margin-right: 5rem;
+}
+
+.contact-main {
+    justify-content: baseline;
+    align-items: top;
+    border-radius: 5%;
+    height: fit-content;
+}
+
 .email {
     position: relative;
     margin: 0;
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 0.5rem;
     font-family: "Poppins", sans-serif;
     text-transform: capitalize;
@@ -252,6 +267,61 @@ a {
     font-size: 22px;
     font-weight: 500;
     justify-content: center;
+    align-items: top;
+}
+
+.contact-section label {
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 0.5rem;
+    font-size: 1.3rem;
+ }
+ 
+ .contact-section .form {
+     position: relative;
+ }
+ 
+ .contact-section .email-enter {
+     border: 2px solid orange;
+     padding: 0;
+     margin: 0;
+     outline: none;
+     background: none;
+     width: 20rem;
+     border-radius: 0.5rem;
+     color: black;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ .contact-section .email-enter:hover {
+     border: 2px solid black;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .contact-section .content-section-label {
+     padding-bottom: 0.2rem;
+     color: black;
+ }
+
+ .contact-section textarea {
+    border: 2px solid orange;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.5rem;
+ }
+
+ .contact-section textarea:hover {
+     border: 2px solid black;
+     transition: all 0.2s ease-in-out;
+ }
+
+ .contact-section .email-enter:focus {
+    border: 2px solid gray;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-section textarea:focus {
+    border: 2px solid gray;
+    transition: all 0.2s ease-in-out;
 }
 
 /* Portfolio */
@@ -267,6 +337,10 @@ a {
    font-size: 10rem;
    font-style: italic;
    font-weight: 100;
+   font-size: 10vw;
+   font-size: auto;
+   justify-content: center;
+   align-items: center;
 }
 
 /* footer */
