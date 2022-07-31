@@ -2,117 +2,269 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evan Keister</title>
-  <!-- Google Fonts-->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@1,300&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <!--- Boostrap CSS File-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <!-- Box Icon -->
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <!-- CSS Style -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <!-- main Start -->
-  <div class="main-wrapper">
-    <!-- Header Start -->
-    <div class="header">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <h1 class="logo-name">EK</h1>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">about</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">contact</a>
-              </li>
-
-            </ul>
-          </div>
+    <!-- Header Start-->
+    <section class="header">
+        <div class="">
+            <nav>
+                <i class="fa fa-home" aria-hidden="true"> <a href=""></a></i>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"><a href=""></a></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+            </nav>
         </div>
-      </nav>
-      <!-- Navbar End -->
-    </div>
-    <!-- Header End -->
-    <!-- Banner content Start -->
-    <div class="banner-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-md-8">
-            <h1 class="banner-title">
-              Hi, I'm Evan Keister. ✋
-            </h1>
-            <p class="banner-desc">I am a rising Sophmore at Northeastern University studying Computer Science and
-              Behvaioral Neuroscience.</p>
-            <p class="banner-desc pb-3">The fields I show interest in are software engineering, biotechnology, and
-              medicine. I'm currently open for internships and co-ops.</p>
-            <a href="about.html" class="banner-btn">read more &rarr;</a><br>
-            <div class="btn btn-primary">
-              <a class="resume" href="files/KeisterEvan_Resume_Website.pdf" target="_blank">View Resume</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="right">
-              <div class="outer-circle">
-                <div class="inner-circle"></div>
-              </div>
-            </div>
-          </div>
+
+        <div class="text-box">
+            <h1>Hello I'm <span>Evan Keister</span></h1>
+            <p>I am a rising Sophmore at Northeastern University studying Computer Science and Behvaioral Neuroscience.
+            </p>
+            <p>The fields I show interest in are software engineering, biotechnology, and medicine.</p>
+            <p>I'm currently open for internships and co-ops.</p>
+            <a href="index.html" class="hero-btn">Contact Me &rarr;</a>
+            <a href="files/KeisterEvan_Resume_Website.pdf" target="_blank" class="hero-btn">Download Resume</a>
         </div>
-      </div>
-    </div>
-    <!-- Banner content End -->
-  </div>
-  <!-- main End -->
 
-  <!-- Footer Start -->
-  <footer class="footer">
-    <div class="container">
-      <div class="social-media text-center">
-        <ul class="footer-list">
-          <li><a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank"><i
-                class='bx bxl-linkedin-square'></i></a></li>
-          <li><a href="mailto:keister.e@northeastern.edu" target="_blank"><i class='bx bxl-gmail'></i></a></li>
-          <li><a href="https://github.com/evankeister" target="_blank"><i class='bx bxl-github' target="_blank"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer End -->
+    </section>
+    <!-- Header End-->
 
-  <!-- Boostrap JS File-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
+    <!-- Work Experience Start -->
+    <section class="work">
+        <h1>Work Experience</h1>
+        <div class="row">
+            <div class="work-col">
+                <h2>Mathematics Teaching Assistant</h2>
+                <h3>GST BOCES | Horeseheads, NY</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A corrupti assumenda excepturi quia veniam
+                    ullam nihil rem labore minima eaque.</p>
+            </div>
+            <div class="work-col">
+                <h2>Fundumentals of Computer Science 1 Teaching Assistant</h2>
+                <h3>Northeastern University | Boston, MA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero nobis possimus eligendi id
+                    nihil
+                    neque facilis perferendis perspiciatis aliquam?</p>
+            </div>
+            <div class="work-col">
+                <h2>Surge AI Debug Technician</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos aliquam iste, ipsa expedita
+                    possimus!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Work Experience Start -->
+
+    <!-- Volunteer Experience Start -->
+    <section class="volunteer">
+        <h1>Volunteer Experience</h1>
+        <div class="row">
+            <div class="volunteer-col">
+                <h2>Volunteer Leader | Boston Cares</h2>
+                <h3>Boston, MA</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A corrupti assumenda excepturi quia veniam
+                    ullam nihil rem labore minima eaque.</p>
+            </div>
+            <div class="volunteer-col">
+                <h2>Concierge Desk | Guthrie Corning Hospital</h2>
+                <h3>Conring, NY</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero nobis possimus eligendi id
+                    nihil
+                    neque facilis perferendis perspiciatis aliquam?</p>
+            </div>
+            <div class="volunteer-col">
+                <h2>Meals on Wheels</h2>
+                <h3>Conring, NY</h3>
+                <h3></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos aliquam iste, ipsa expedita
+                    possimus!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Volunteer Experience End -->
+
+    <!-- Courses Start -->
+    <section class="courses">
+        <h1>Courses</h1>
+
+        <div class="outer-row">
+            <h3>Computer Science:</h1>
+                <div class="row">
+                    <div class="courses-col">
+                        <div class="course-image">
+                            <h2>Fundumentals of Computer Science 1</h2>
+                            <img src="images/workspace.jpg" alt="#">
+                        </div>
+                        <div class="layer">
+                            <h3>Functional Programming in DrRacket; <br> focused on recursion. <br> Projects: Spelling
+                                Bee
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="courses-col">
+                        <div class="course-image">
+                            <h2>Discrete Structures</h2>
+                            <img src="images/workspace2.jpg" alt="#">
+                        </div>
+                        <div class="layer">
+                            <h3>Alternative Number Bases (binary, hexadecimal, etc.), Boolean Logic/Operators, Counting,
+                                Probability, and Proofs
+                                by Induction</h3>
+                        </div>
+                    </div>
+                    <div class="courses-col">
+                        <div class="course-image">
+                            <h2>Fundumentals of Computer Science 2</h2>
+                            <img src="images/coding2.jpg" alt="#">
+                        </div>
+                        <div class="layer">
+                            <h3>Programming in Java; <br> focused on recursion and some OOD. <br> Projects: NBullets,
+                                FlootIt,<br> Maze Algorithm Solver (Spanning Trees, DFS, BFS).
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="courses-col">
+                        <div class="course-image">
+                            <h2>Object Oriented Design</h2>
+                            <img src="images/coding.jpg" alt="#">
+                        </div>
+                        <div class="layer">
+                            <h3>OOD in Java. <br> Projects: Marble Solitaire, <br>Image Processor</h3>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="outer-row">
+            <h3>Behvaioral Neuroscience:</h1>
+                <div class="row">
+                    <div class="courses-col">
+                        <div class="course-image">
+                            <h2>General Chemistry</h2>
+                            <img src="images/chemistry.jpg" alt="#">
+                        </div>
+                        <div class="layer">
+                            <h3>Stoichiometry, Molceular Shapes/Geometry, etc. Labs: Mass Spectrometry, etc.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="courses-col">
+                        <div class="course-image">
+                            <h2>Inquires in Biological Sciences</h2>
+                            <img src="images/locomotion.jpg" alt="#">
+                        </div>
+                        <div class="layer">
+                            <h3>Focused on reading/analyzing research papers. <br> Top of focus: locomotion.
+                                <br> Final Project: Zombie Ant Locomotion
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="courses-col">
+                        <div class="course-image">
+                            <h2>Genetics and Molceular Biology</h2>
+                            <img src="images/genetics.jpg" alt="#">
+                        </div>
+                        <div class="layer">
+                            <h3>DNA Replication, Cell Cycle, Reproduction, Hardy-Weinberg, etc. <br> Labs: NCBI
+                                Databases, etc.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="courses-col">
+                        <div class="course-image">
+                            <h2>Abnormal Psychology</h2>
+                            <img src="images/psychology.jpg" alt="#">
+                        </div>
+                        <div class="layer">
+                            <h3>Studied various diseases and <br> their characteristics (Dimentia, Anxiety,
+                                Schizophrenia,
+                                etc.). <br>Final Project: studied MRI predictive <br>
+                                modeling in people acquiring neurodegenerative diseases</h3>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- Courses End -->
+
+    <!-- Programming Languages Start -->
+    <section class="programming-languages">
+        <h1 class="title">Programming Languages</h1>
+        <div class="row">
+            <div class="programming-languages-col">
+                <h1>Advanced</h1>
+                <h2>Java, DrRacket</h2>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="programming-languages-col">
+                <h1>Intermediate</h1>
+                <h2>HTML, CSS</h2>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="programming-languages-col basic">
+                <h1>Basic</h1>
+                <h2>Python, JavaScript</h2>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Programming Languages End -->
+
+    <!-- Footer Start -->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank"><i class="fa fa-linkedin"
+                    aria-hidden="true"></i></a>
+            <a href="https://github.com/evankeister?tab=repositories" target="_blank"><i class="fa fa-github"
+                    aria-hidden="true"></i></a>
+            <a href="mailto:keister.e@northeastern.edu" target="_blank"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <h5>keister.e@northeastern.edu</h5>
+    </section>
+    <!-- Footer End -->
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
