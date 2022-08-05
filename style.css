@@ -5,6 +5,11 @@
 }
 
 /* Header */
+
+.home-icon {
+    text-decoration: none;
+}
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -22,10 +27,6 @@ nav {
     margin-bottom: 100px;
 }
 
-nav img {
-    width: 150px;
-}
-
 .nav-links {
     flex: 1;
     text-align: right;
@@ -41,7 +42,7 @@ nav img {
 .nav-links ul li a {
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.2rem;
 }
 
 .nav-links ul li::after {
@@ -54,8 +55,10 @@ nav img {
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after {
-    width: 100%;
+@media(hover: hover) {
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
 }
 
 .text-box {
@@ -71,7 +74,7 @@ nav img {
 }
 
 .text-box h1 {
-    font-size: 3.875rem;
+    font-size: 5vw;
     padding-bottom: 10px;
 }
 
@@ -82,7 +85,7 @@ nav img {
 
 .text-box p {
     margin: 10px 0 30px;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #fff;
     line-height: 2.5rem;
 }
@@ -102,18 +105,20 @@ nav img {
 
 .header .hero-btn {
     margin-left: 20px;
-    margin-right: 20;
+    margin-right: 20px;
 }
 
 .text-box .hero-btn {
     margin-top: 50px;
 }
 
-.hero-btn:hover {
-    border: 1px solid #f44336;
-    background: #f44336;
-    transition: 1s;
-    box-shadow: 0 0 20px 0px rgb(255, 255, 255, 0.5);
+@media(hover: hover) {
+    .hero-btn:hover {
+        border: 1px solid #f44336;
+        background: #f44336;
+        transition: 1s;
+        box-shadow: 0 0 20px 0px rgb(255, 255, 255, 0.5);
+    }
 }
 
 nav .fa-times {
@@ -138,18 +143,14 @@ nav .fa-home:hover {
     text-shadow: 2px 2px rgb(255, 255, 255);
 }
 
-.nav .fa-times:hover {
-    color: rgb(52, 52, 235);
-    transition: 0.5s;
+@media (hover: hover) {
+    .nav .fa-times:hover {
+        color: rgb(52, 52, 235);
+        transition: 0.5s;
+    }
 }
 
 @media (max-width: 700px) {
-    .text-box {
-        margin-top: 50px;
-    }
-    .text-box h1 {
-        font-size: 1.5rem;
-    }
 
     .text-box p {
         font-size: 1rem;
@@ -225,6 +226,10 @@ nav .fa-home:hover {
     padding: none;
     font-size: 20px;
     line-height: 2rem;
+}
+
+.work-col span {
+    font-weight: 700;
 }
 
 .work-col {
@@ -303,6 +308,7 @@ nav .fa-home:hover {
     font-weight: 400;
     font-size: 2rem;
     padding-top: 50px;
+    color: black;
     position: relative;
 }
 
@@ -317,7 +323,7 @@ nav .fa-home:hover {
 .courses-col img {
     width: 100%;
     height: fit-content;
-    overflow-y: hidden;
+    overflow-y: visible;
     display: block;
 }
 
@@ -330,13 +336,14 @@ nav .fa-home:hover {
     width: 100%;
     font-weight: 500;
     color: white;
-    font-size: 26px;
+    font-size: 1.5rem;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     opacity: 1;
     transition: 0.5s;
+    opacity: 1;
 }
 
 .course-image img {
@@ -355,36 +362,60 @@ nav .fa-home:hover {
 }
 
 .layer:hover {
-    background: rgba(226, 0, 0, 0.7);
+    background: rgba(215, 88, 3, 0.6);
 }
 
 .layer h3 {
     width: 100%;
     font-weight: 500;
     color: white;
-    font-size: 25px;
+    font-size: 2vw;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
     transition: 0.5s;
+    padding-bottom: 100px;
 }
 
 .layer:hover h3 {
-    top: 45%;
     opacity: 1;
+    top: 2%;
+    transition: 0.5s;
+}
+
+.courses-col .long-text {
+    font-size: 1.5vw;
+}
+
+.layer:hover + .course-image h2 {
+    opacity: 0;
+    color: black;
+    transition: 0.5s;
 }
 
 @media (max-width: 700px) {
-    .layer:hover h3 {
-        top: 10%;
+    .courses .row {
+        flex-direction: column;
+    }
+    .layer h3 {
+        font-size: 3vh;
+    }
+    .courses-col .long-text {
+        font-size: 2.5vh;
     }
 }
 
-@media (max-width: 1000px) {
-    .courses .row {
-        flex-direction: column;
+@media (max-width: 400px) {
+    .layer h3 {
+        font-size: 5vw;
+    }
+    .courses-col .long-text {
+        font-size: 4vw;
+    }
+    .course-image h2 {
+        font-size: 6vw;
     }
 }
 
@@ -396,9 +427,6 @@ nav .fa-home:hover {
     padding-top: 100px;
     padding-right: 10px;
     padding-bottom: 100px;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("images/pl.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 .programming-languages h1 {
@@ -408,7 +436,7 @@ nav .fa-home:hover {
 
 .title {
     margin-bottom: 50px;
-    color: white;
+    color: black;
 }
 
 p {
@@ -451,7 +479,7 @@ h3 {
     box-shadow: 20px 20px 20px rgba(16, 181, 231, 0.9);
     background: black;
     color: white;
-} 
+}
 
 .programming-languages-col:hover h1 {
     color: white;
@@ -491,6 +519,14 @@ h3 {
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    background: linear-gradient(rgba(255, 165, 0, 0.6), rgba(0, 0, 255, 0.2));
+    margin-top: auto;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer h4 {
@@ -519,10 +555,15 @@ h3 {
 
 
 /* Contact Page */
+
+.contact-me {
+    font-size: 3rem;
+}
+
 .sub-header {
     height: 50vh;
     width: 100;
-    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("images/background.jpg");
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("images/neu.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -531,6 +572,7 @@ h3 {
 
 .sub-header h1 {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .red-btn {
@@ -586,7 +628,8 @@ h3 {
     font-weight: 400;
 }
 
-.contact-col input, .contact-col textarea {
+.contact-col input,
+.contact-col textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 17px;
@@ -605,3 +648,51 @@ h3 {
     }
 }
 
+input[type=email] {
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+textarea {
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+textarea:hover {
+    border: 1px solid orange;
+    transition: 0.5s;
+}
+
+
+
+/* Portfolio */
+.portfolio-body .sub-header {
+    height: fit-content;
+}
+
+.portfolio-body .sub-header nav {
+    margin-bottom: 4%;
+}
+
+.portfolio-body .sub-header h1 {
+    margin: 0;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    font-size: 2.5rem;
+}
+
+
+.portfolio-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.portfolio-section h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    font-style: italic;
+}

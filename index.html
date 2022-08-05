@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,14 +20,16 @@
 <body>
     <!-- Header Start-->
     <section class="header">
-        <div class="">
+        <div>
             <nav>
-                <i class="fa fa-home" aria-hidden="true"> <a href=""></a></i>
+                <a class="home-icon" href="index.html"><i class="fa fa-home"></i></a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"><a href=""></a></i>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="courses.html" title="Contact">Courses</a></li>
+                        <li><a href="portfolio.html" title="Contact">Portfolio</a></li>
+                        <li><a href="contact.html" title="Contact">Contact</a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
@@ -54,20 +56,27 @@
             <div class="work-col">
                 <h2>Mathematics Teaching Assistant</h2>
                 <h3>GST BOCES | Horeseheads, NY</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A corrupti assumenda excepturi quia veniam
-                    ullam nihil rem labore minima eaque.</p>
+                <p>Assisted a 7th Grade Summer School Classroom. Prepared students to pass the final exam for the class.
+                </p>
             </div>
             <div class="work-col">
                 <h2>Fundumentals of Computer Science 1 Teaching Assistant</h2>
                 <h3>Northeastern University | Boston, MA</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero nobis possimus eligendi id
-                    nihil
-                    neque facilis perferendis perspiciatis aliquam?</p>
+                <p>Assisted students debug DrRacket programs, hosted office hours, graded assignments/tests,
+                    and responded to various students inquiries on Piazza.
+                </p>
             </div>
             <div class="work-col">
                 <h2>Surge AI Debug Technician</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos aliquam iste, ipsa expedita
-                    possimus!</p>
+                <h3>Freelance</h3>
+                <h5>Projects:</h5>
+                <p><span>Website Chatbot Assistant Data Gathering:</span> performed different mock user input on
+                    websites. Used a
+                    Chrome Extension
+                    that captured site movement via JSON files. Data used to create AI assistants for websites such
+                    as
+                    Craigslist.
+                </p>
             </div>
         </div>
     </section>
@@ -80,134 +89,30 @@
             <div class="volunteer-col">
                 <h2>Volunteer Leader | Boston Cares</h2>
                 <h3>Boston, MA</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A corrupti assumenda excepturi quia veniam
-                    ullam nihil rem labore minima eaque.</p>
+                <h4>Events:</h4>
+                <p>Prospect Hill Academy STEAM Saturdays: assisted a youth LEGO robotics classroom (Cambridge, MA).</p>
+                <p>X-Cel Education: Highschool equivalency math tutoring for people working to obtain a Highschool
+                    diploma (Roxbury, MA).</p>
             </div>
             <div class="volunteer-col">
                 <h2>Concierge Desk | Guthrie Corning Hospital</h2>
                 <h3>Conring, NY</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero nobis possimus eligendi id
-                    nihil
-                    neque facilis perferendis perspiciatis aliquam?</p>
+                <p>Helped visitors at the hospital with various inquires.
+                    Managed patients checking-in and waiting for appoitments.
+                    Walked with patients and visitors to other sectors around hospital.
+                </p>
             </div>
             <div class="volunteer-col">
                 <h2>Meals on Wheels</h2>
                 <h3>Conring, NY</h3>
                 <h3></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos aliquam iste, ipsa expedita
-                    possimus!</p>
+                <p>Delivered Meals to the homebound during the COVID-19 pandemic.
+                    Socialized with recipients.
+                </p>
             </div>
         </div>
     </section>
     <!-- Volunteer Experience End -->
-
-    <!-- Courses Start -->
-    <section class="courses">
-        <h1>Courses</h1>
-
-        <div class="outer-row">
-            <h3>Computer Science:</h1>
-                <div class="row">
-                    <div class="courses-col">
-                        <div class="course-image">
-                            <h2>Fundumentals of Computer Science 1</h2>
-                            <img src="images/workspace.jpg" alt="#">
-                        </div>
-                        <div class="layer">
-                            <h3>Functional Programming in DrRacket; <br> focused on recursion. <br> Projects: Spelling
-                                Bee
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="courses-col">
-                        <div class="course-image">
-                            <h2>Discrete Structures</h2>
-                            <img src="images/workspace2.jpg" alt="#">
-                        </div>
-                        <div class="layer">
-                            <h3>Alternative Number Bases (binary, hexadecimal, etc.), Boolean Logic/Operators, Counting,
-                                Probability, and Proofs
-                                by Induction</h3>
-                        </div>
-                    </div>
-                    <div class="courses-col">
-                        <div class="course-image">
-                            <h2>Fundumentals of Computer Science 2</h2>
-                            <img src="images/coding2.jpg" alt="#">
-                        </div>
-                        <div class="layer">
-                            <h3>Programming in Java; <br> focused on recursion and some OOD. <br> Projects: NBullets,
-                                FlootIt,<br> Maze Algorithm Solver (Spanning Trees, DFS, BFS).
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="courses-col">
-                        <div class="course-image">
-                            <h2>Object Oriented Design</h2>
-                            <img src="images/coding.jpg" alt="#">
-                        </div>
-                        <div class="layer">
-                            <h3>OOD in Java. <br> Projects: Marble Solitaire, <br>Image Processor</h3>
-                        </div>
-                    </div>
-                </div>
-        </div>
-
-        <div class="outer-row">
-            <h3>Behvaioral Neuroscience:</h1>
-                <div class="row">
-                    <div class="courses-col">
-                        <div class="course-image">
-                            <h2>General Chemistry</h2>
-                            <img src="images/chemistry.jpg" alt="#">
-                        </div>
-                        <div class="layer">
-                            <h3>Stoichiometry, Molceular Shapes/Geometry, etc. Labs: Mass Spectrometry, etc.
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="courses-col">
-                        <div class="course-image">
-                            <h2>Inquires in Biological Sciences</h2>
-                            <img src="images/locomotion.jpg" alt="#">
-                        </div>
-                        <div class="layer">
-                            <h3>Focused on reading/analyzing research papers. <br> Top of focus: locomotion.
-                                <br> Final Project: Zombie Ant Locomotion
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="courses-col">
-                        <div class="course-image">
-                            <h2>Genetics and Molceular Biology</h2>
-                            <img src="images/genetics.jpg" alt="#">
-                        </div>
-                        <div class="layer">
-                            <h3>DNA Replication, Cell Cycle, Reproduction, Hardy-Weinberg, etc. <br> Labs: NCBI
-                                Databases, etc.
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="courses-col">
-                        <div class="course-image">
-                            <h2>Abnormal Psychology</h2>
-                            <img src="images/psychology.jpg" alt="#">
-                        </div>
-                        <div class="layer">
-                            <h3>Studied various diseases and <br> their characteristics (Dimentia, Anxiety,
-                                Schizophrenia,
-                                etc.). <br>Final Project: studied MRI predictive <br>
-                                modeling in people acquiring neurodegenerative diseases</h3>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
-    <!-- Courses End -->
 
     <!-- Programming Languages Start -->
     <section class="programming-languages">
@@ -257,7 +162,8 @@
                     aria-hidden="true"></i></a>
             <a href="https://github.com/evankeister?tab=repositories" target="_blank"><i class="fa fa-github"
                     aria-hidden="true"></i></a>
-            <a href="mailto:keister.e@northeastern.edu" target="_blank"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="mailto:keister.e@northeastern.edu" target="_blank"> <i class="fa fa-envelope"
+                    aria-hidden="true"></i></a>
         </div>
         <h5>keister.e@northeastern.edu</h5>
     </section>
