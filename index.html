@@ -17,36 +17,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="main-body">
     <!-- Header Start-->
-    <section class="header">
-        <div>
-            <nav>
-                <a class="home-icon" href="index.html"><i class="fa fa-home"></i></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"><a href=""></a></i>
-                    <ul>
-                        <li><a href="index.html" title="Home">Home</a></li>
-                        <li><a href="courses.html" title="Contact">Courses</a></li>
-                        <li><a href="portfolio.html" title="Contact">Portfolio</a></li>
-                        <li><a href="contact.html" title="Contact">Contact</a></li>
-                    </ul>
+    <div class="home">
+        <section class="sub-header">
+            <div>
+                <nav>
+                    <a class="home-icon" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"><a href=""></a></i>
+                        <ul>
+                            <li><a href="index.html" title="Home">Home</a></li>
+                            <li><a href="courses.html" title="Contact">Courses</a></li>
+                            <li><a href="portfolio.html" title="Contact">Portfolio</a></li>
+                            <li><a href="contact.html" title="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+                </nav>
+                <div class="header-content">
+                    <h1>Hello, I'm <span>Evan Keister</span></h1>
+                    <p>I am a rising Sophmore at Northeastern University studying Computer Science and Behavioral
+                        Neuroscience.</p>
+                    <p>The fields I show interest in are software engineering, biotechnology, and medicine.</p>
+                    <p>I'm currently open for internships and co-ops.</p>
+                    <a href="contact.html" class="hero-btn">Contact Me &rarr;</a>
+                    <a href="files/KeisterEvan_Resume_Website.pdf" target="_blank" class="hero-btn last">Download
+                        Resume</a>
                 </div>
-                <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
-            </nav>
-        </div>
-
-        <div class="text-box">
-            <h1>Hello I'm <span>Evan Keister</span></h1>
-            <p>I am a rising Sophmore at Northeastern University studying Computer Science and Behvaioral Neuroscience.
-            </p>
-            <p>The fields I show interest in are software engineering, biotechnology, and medicine.</p>
-            <p>I'm currently open for internships and co-ops.</p>
-            <a href="contact.html" class="hero-btn">Contact Me &rarr;</a>
-            <a href="files/KeisterEvan_Resume_Website.pdf" target="_blank" class="hero-btn">Download Resume</a>
-        </div>
-
-    </section>
+            </div>
+        </section>
+    </div>
     <!-- Header End-->
 
     <!-- Work Experience Start -->
@@ -55,27 +56,24 @@
         <div class="row">
             <div class="work-col">
                 <h2>Mathematics Teaching Assistant</h2>
-                <h3>GST BOCES | Horeseheads, NY</h3>
+                <h3>GST BOCES | Horeseheads, NY | Summer 2022</h3>
+                <hr>
                 <p>Assisted a 7th Grade Summer School Classroom. Prepared students to pass the final exam for the class.
                 </p>
             </div>
             <div class="work-col">
                 <h2>Fundumentals of Computer Science 1 Teaching Assistant</h2>
-                <h3>Northeastern University | Boston, MA</h3>
+                <h3>Northeastern University | Boston, MA | Fall 2022</h3>
+                <hr>
                 <p>Assisted students debug DrRacket programs, hosted office hours, graded assignments/tests,
                     and responded to various students inquiries on Piazza.
                 </p>
             </div>
             <div class="work-col">
                 <h2>Surge AI Debug Technician</h2>
-                <h3>Freelance</h3>
-                <h5>Projects:</h5>
-                <p><span>Website Chatbot Assistant Data Gathering:</span> performed different mock user input on
-                    websites. Used a
-                    Chrome Extension
-                    that captured site movement via JSON files. Data used to create AI assistants for websites such
-                    as
-                    Craigslist.
+                <h3>Freelance | Summer 2022</h3>
+                <hr>
+                <p>Helper gather data to train chat-bot assistants for websites.
                 </p>
             </div>
         </div>
@@ -88,15 +86,18 @@
         <div class="row">
             <div class="volunteer-col">
                 <h2>Volunteer Leader | Boston Cares</h2>
-                <h3>Boston, MA</h3>
+                <h3>Boston, MA |</h3>
+                <hr>
                 <h4>Events:</h4>
-                <p>Prospect Hill Academy STEAM Saturdays: assisted a youth LEGO robotics classroom (Cambridge, MA).</p>
-                <p>X-Cel Education: Highschool equivalency math tutoring for people working to obtain a Highschool
-                    diploma (Roxbury, MA).</p>
+                <p>- Prospect Hill Academy STEAM Saturdays: assisted a youth LEGO robotics classroom (Cambridge, MA;
+                    Spring 2022).</p>
+                <p>- X-Cel Education: Highschool equivalency math tutoring for people working to obtain a Highschool
+                    diploma (Roxbury, MA; Spring 2022).</p>
             </div>
             <div class="volunteer-col">
                 <h2>Concierge Desk | Guthrie Corning Hospital</h2>
-                <h3>Conring, NY</h3>
+                <h3>Conring, NY | Fall & Spring 2019/2020</h3>
+                <hr>
                 <p>Helped visitors at the hospital with various inquires.
                     Managed patients checking-in and waiting for appoitments.
                     Walked with patients and visitors to other sectors around hospital.
@@ -104,8 +105,8 @@
             </div>
             <div class="volunteer-col">
                 <h2>Meals on Wheels</h2>
-                <h3>Conring, NY</h3>
-                <h3></h3>
+                <h3>Conring, NY | Summer 2020</h3>
+                <hr>
                 <p>Delivered Meals to the homebound during the COVID-19 pandemic.
                     Socialized with recipients.
                 </p>
@@ -131,7 +132,7 @@
             </div>
             <div class="programming-languages-col">
                 <h1>Intermediate</h1>
-                <h2>HTML, CSS</h2>
+                <h2>HTML, CSS, JavaScript</h2>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -142,7 +143,7 @@
             </div>
             <div class="programming-languages-col basic">
                 <h1>Basic</h1>
-                <h2>Python, JavaScript</h2>
+                <h2>Python</h2>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -157,15 +158,17 @@
 
     <!-- Footer Start -->
     <section class="footer">
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank"><i class="fa fa-linkedin"
-                    aria-hidden="true"></i></a>
-            <a href="https://github.com/evankeister?tab=repositories" target="_blank"><i class="fa fa-github"
-                    aria-hidden="true"></i></a>
-            <a href="mailto:keister.e@northeastern.edu" target="_blank"> <i class="fa fa-envelope"
-                    aria-hidden="true"></i></a>
+        <div class="footer-content">
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a href="https://github.com/evankeister?tab=repositories" target="_blank"><i class="fa fa-github"
+                        aria-hidden="true"></i></a>
+                <a href="mailto:keister.e@northeastern.edu" target="_blank"> <i class="fa fa-envelope"
+                        aria-hidden="true"></i></a>
+            </div>
+            <h5>keister.e@northeastern.edu</h5>
         </div>
-        <h5>keister.e@northeastern.edu</h5>
     </section>
     <!-- Footer End -->
 
