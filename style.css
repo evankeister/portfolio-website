@@ -225,6 +225,11 @@ nav .fa-home:hover {
     color: white;
 }
 
+.courses .outer-row h3 {
+    font-size: 1.75rem;
+    font-weight: 600;;
+}
+
 .main-body .sub-header h1 {
     margin: 0;
     padding-top: 0%;
@@ -287,6 +292,7 @@ nav .fa-home:hover {
     font-weight: 600;
     font-style: oblique;
     padding: none;
+    font-size: 1.75rem;
 }
 
 .work-col h2 {
@@ -347,6 +353,7 @@ hr {
     font-weight: 600;
     font-style: oblique;
     padding: none;
+    font-size: 1.75rem;
 }
 
 .volunteer-col h2 {
@@ -516,13 +523,13 @@ hr {
     width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-right: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 20;
 }
 
 .programming-languages h1 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -605,6 +612,14 @@ h3 {
     font-size: 25px;
 }
 /* Programming Languages End */
+
+/* Licenses and Certifications Start */
+.license {
+    background: #fff3f3;
+    padding-top: 5px;
+    font-size: 80%;
+}
+/* Licenses and Certifications End */
 
 /* Contact Start */
 .contact-us {
