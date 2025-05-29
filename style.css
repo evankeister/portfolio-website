@@ -290,7 +290,7 @@ nav .fa-home:hover {
 
 .work h1 {
     font-weight: 600;
-    font-style: oblique;
+    /* font-style: oblique; */
     padding: none;
     font-size: 1.75rem;
 }
@@ -529,7 +529,7 @@ hr {
 }
 
 .programming-languages h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
 }
 
@@ -612,6 +612,14 @@ h3 {
     font-size: 25px;
 }
 /* Programming Languages End */
+
+/* Education Start */
+.education {
+    background: rgba(91, 234, 225, 0.1);
+    padding-top: 5px;
+    font-size: 80%;
+}
+/* Education End */
 
 /* Licenses and Certifications Start */
 .license {
