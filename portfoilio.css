@@ -1,3 +1,35 @@
 .nav-links ul li:nth-child(3) a {
     color: #f44336;
 }
+
+.portfolio-row {
+    display: flex;
+    justify-content: space-between; /* Even spacing */
+    flex-wrap: wrap; /* Responsive */
+    gap: 20px; /* Optional, clean spacing */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.portfolio-col {
+    flex: 1;
+    max-width: 32%;
+    min-width: 280px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.portfolio-col:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}

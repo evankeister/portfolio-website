@@ -226,7 +226,7 @@ nav .fa-home:hover {
 }
 
 .courses .outer-row h3 {
-    font-size: 1.75rem;
+    font-size: 2.0rem;
     font-weight: 600;;
 }
 
@@ -292,11 +292,12 @@ nav .fa-home:hover {
     font-weight: 600;
     /* font-style: oblique; */
     padding: none;
-    font-size: 1.75rem;
+    font-size: 2.0rem;
 }
 
 .work-col h2 {
     padding: none;
+    font-size: 1.75rem;
 }
 
 .work-col h3 {
@@ -322,7 +323,8 @@ nav .fa-home:hover {
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
-    background: rgba(244, 67, 54, 0.1);
+    background: rgba(211, 211, 211, 0.2);
+    /* background: rgba(244, 67, 54, 0.1); */
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -363,14 +365,14 @@ hr {
 .volunteer-col h3 {
     padding: none;
     font-weight: 300;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .volunteer-col p {
     padding: none;
     font-size: 1.25rem;
     line-height: 2rem;
-    font-weight: 400;
+    color: black;
 }
 
 .volunteer-col {
@@ -401,7 +403,7 @@ hr {
 
 .outer-row h3 {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3.0rem;
     padding-top: 50px;
     color: black;
     position: relative;
@@ -738,7 +740,7 @@ input:focus {
 .portfolio-section h1 {
     font-weight: 900;
     font-size: 3rem;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .portfolio {
@@ -750,8 +752,9 @@ input:focus {
 
 .portfolio h1 {
     font-weight: 600;
-    font-style: oblique;
+    /*font-style: oblique; */
     padding-bottom: 20px;
+    font-size: 1.75rem;
 }
 
 .portfolio-col {
