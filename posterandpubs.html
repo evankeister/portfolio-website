@@ -1,133 +1,152 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="pubs.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300&display=swap"
-        rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>  
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Portfolio</title>  
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="pubs.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <!-- Google Fonts -->  
+    <link  
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300&display=swap"  
+        rel="stylesheet">  
+    <!-- Icons -->  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <!-- Academicons for ResearchGate -->  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">  
 </head>
 
-<body class="main-body">
-    <!-- Header Start-->
-    <div class="secondary">
-        <section class="sub-header">
+
+<body class="main-body">  
+    <!-- Header Start-->  
+    <div class="secondary">  
+        <section class="sub-header">  
             <div>
-                <nav>
-                    <a class="home-icon" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-                    <div class="nav-links" id="navLinks">
-                        <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"><a href=""></a></i>
-                        <ul>
-                            <li><a href="index.html" title="Home">Home</a></li>
-                            <li><a href="posterandpubs.html" title="Contact">Publications</a></li>
-                            <li id="portfolio-heading-attribute"><a href="portfolio.html" title="Contact" class="portfolio-header">CS Portfolio</a></li>
-                            <li><a href="contact.html" title="Contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
-                </nav>
-                <h1 class="portfolio-header">Publications and Poster Presentations</h1>
-            </div>
-        </section>
-    </div>
+                <nav>  
+                    <a class="home-icon" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>  
+                    <div class="nav-links" id="navLinks">  
+                        <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"><a href=""></a></i>  
+                        <ul>  
+                            <li><a href="index.html" title="Home">Home</a></li>  
+                            <li><a href="posterandpubs.html" title="Publications">Publications</a></li>  
+                            <li id="portfolio-heading-attribute"><a href="portfolio.html" title="CS Portfolio"  
+                                    class="portfolio-header">CS Portfolio</a></li>  
+                            <li><a href="contact.html" title="Contact">Contact</a></li>  
+                        </ul>  
+                    </div>  
+                    <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>  
+                </nav>  
+                <h1 class="portfolio-header">Publications & Poster Presentations</h1>  
+            </div>  
+        </section>  
+    </div>  
     <!-- Header End-->
 
-    <!--Publications-->
-    <section class="work">
-        <h1>Publications:</h1>
-        <div class="row">
-            <div class="work-col">
-                <h2>Review Article Publication</h2>
-                <h3><em>Frontiers in Neuroscience</em><h3>
-                <hr>
-                <p>Aten, S., Ramirez-Plascencia, O., Blake, C., Holder, G., Fishbein, E., Vieth, A., Zarghani-Shiraz, A., Keister, E., Howe, S., Appo, A.,
-                    Palmer, B., & Mahoney, C. E. (2025). A time for sex: Circadian regulation of mammalian sexual and reproductive function. “Frontiers
-                    in Neuroscience”, 18, 1516767. <a href="https://doi.org/10.3389/fnins.2024.1516767" target="_blank">https://doi.org/10.3389/fnins.2024.1516767</a>.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- Publications -->
 
-       <!--Poster Presentations: -->
-       <section class="work">
-        <h1>Poster Presentations:</h1>
-        <div class="row">
-            <div class="work-col">
-                <h2>Undergraduate Research Symposium at Northeastern University</h2>
-                <h3>Boston, MA | April 15, 2025</h3>
-                <hr>
-                <p>Wang, C.-Y., Yang, S.-P., Keister, E., Zamora, H., Parry, R., Bekdash, A., Carscadden, J., Benjamin, S., Pustovid, A., & Fishell, G.
-                    (2025, April 15). “Investigating the Role of TCF4 in Interneuron Development”.
-                </p>
-            </div>
-            <div class="work-col">
-                <h2>2025 National Undergraduate Research Conference at Brown University</h2>
-                <h3>Boston, MA | April 12, 2025</h3>
-                <hr>
-                <p>Wang, C.-Y., Yang, S.-P., Keister, E., Zamora, H., Parry, R., Bekdash, A., Carscadden, J., Benjamin, S., Pustovid, A., & Fishell, G.
-                    (2025, April 12). “Investigating the Role of TCF4 in Interneuron Development”.
-                </p>
-            </div>
-            <div class="work-col">
-                <h2>RISE 2025 at Northeastern University</h2>
-                <h3>Boston, MA | April 11, 2025</h3>
-                <hr>
-                <p>Wang, C.-Y., Yang, S.-P., Keister, E., Zamora, H., Parry, R., Bekdash, A., Carscadden, J., Benjamin, S., Pustovid, A., & Fishell, G.
-                    (2025, April 11). “Investigating the Role of TCF4 in Interneuron Development”.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="work-col">
-                <h2>20th Annual Broad Institute of MIT and Harvard Research Retreat</h2>
-                <h3>Boston, MA | December 16, 2024</h3>
-                <hr>
-                <p>Wang, C.-Y., Yang, S.-P., Keister, E., Zamora, H., Parry, R., Bekdash, A., Carscadden, J., Benjamin, S., Pustovid, A., & Fishell, G.
-                    (2024, December 16). “Investigating the Role of TCF4 in Interneuron Development”.
-                </p>
-            </div>
-            <div class="work-col">
-                <h2>First Annual Beth Israel Deaconess Medical Center and Harvard Medical School Neurology Research Retreat</h2>
-                <h3>Boston, MA | April 24, 2024</h3>
-                <hr>
-                <p>Vieth, A., Keister, E., Fishbein, E., Aten, S., & Saper, C. B. (2024, April 24). “Circadian rhythms in mouse sexual behavior & potential
-                    hypothalamic circuits modulating such behaviors”.
-                </p>
-            </div>
-        </div>
-      
-    </section>
-    <!-- Publications -->
+    <!-- Publications Section -->  
+    <section class="work">  
+        <h1>Publications</h1>  
+        <div class="rg-row">  
+            <div class="work-col researchgate-card">  
+                <div class="rg-icon-container">  
+                    <i class="ai ai-researchgate ai-3x"></i>  
+                </div>  
+                <h2>View My Publications on ResearchGate</h2>  
+                <hr>  
+                <p></p>  
+                <a href="https://www.researchgate.net/profile/Evan-Keister-2" target="_blank" class="rg-button">  
+                    Visit ResearchGate Profile →  
+                </a>  
+            </div>  
+        </div>  
+    </section>  
+    <!-- Publications End -->
 
-   <!-- Footer Start -->
-    <section class="footer">
-        <div class="footer-content">
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank"><i class="fa fa-linkedin"
-                        aria-hidden="true"></i></a>
-                <a href="https://github.com/evankeister?tab=repositories" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i></a>
-                <a href="mailto:evankeister11@gmail.com" target="_blank"> <i class="fa fa-envelope"
-                        aria-hidden="true"></i></a>
-            </div>
-            <h5>evankeister11@gmail.com</h5>
-        </div>
-    </section>
+
+    <!-- Poster Presentations -->  
+    <section class="work">  
+        <h1>Poster Presentations</h1>  
+        <div class="poster-row">  
+            <div class="work-col">  
+                <h2>Undergraduate Research Symposium at Northeastern University</h2>  
+                <h3>Boston, MA | April 15, 2025</h3>  
+                <hr>  
+                <p>Wang, C.-Y., Yang, S.-P., <strong>Keister, E.</strong>, Zamora, H., Parry, R., Bekdash, A.,  
+                    Carscadden, J., Benjamin, S., Pustovid, A., & Fishell, G.  
+                    (2025, April 15). "Investigating the Role of TCF4 in Interneuron Development".  
+                </p>  
+            </div>  
+            <div class="work-col">  
+                <h2>2025 National Undergraduate Research Conference at Brown University</h2>  
+                <h3>Providence, RI | April 12, 2025</h3>  
+                <hr>  
+                <p>Wang, C.-Y., Yang, S.-P., <strong>Keister, E.</strong>, Zamora, H., Parry, R., Bekdash, A.,  
+                    Carscadden, J., Benjamin, S., Pustovid, A., & Fishell, G.  
+                    (2025, April 12). "Investigating the Role of TCF4 in Interneuron Development".  
+                </p>  
+            </div>  
+            <div class="work-col">  
+                <h2>RISE 2025 at Northeastern University</h2>  
+                <h3>Boston, MA | April 11, 2025</h3>  
+                <hr>  
+                <p>Wang, C.-Y., Yang, S.-P., <strong>Keister, E.</strong>, Zamora, H., Parry, R., Bekdash, A.,  
+                    Carscadden, J., Benjamin, S., Pustovid, A., & Fishell, G.  
+                    (2025, April 11). "Investigating the Role of TCF4 in Interneuron Development".  
+                </p>  
+            </div>  
+        </div>  
+        <div class="poster-row poster-row-2">  
+            <div class="work-col">  
+                <h2>20th Annual Broad Institute of MIT and Harvard Research Retreat</h2>  
+                <h3>Boston, MA | December 16, 2024</h3>  
+                <hr>  
+                <p>Wang, C.-Y., Yang, S.-P., <strong>Keister, E.</strong>, Zamora, H., Parry, R., Bekdash, A.,  
+                    Carscadden, J., Benjamin, S., Pustovid, A., & Fishell, G.  
+                    (2024, December 16). "Investigating the Role of TCF4 in Interneuron Development".  
+                </p>  
+            </div>  
+            <div class="work-col">  
+                <h2>First Annual Beth Israel Deaconess Medical Center and Harvard Medical School Neurology Research  
+                    Retreat</h2>  
+                <h3>Boston, MA | April 24, 2024</h3>  
+                <hr>  
+                <p>Vieth, A., <strong>Keister, E.</strong>, Fishbein, E., Aten, S., & Saper, C. B. (2024, April 24).  
+                    "Circadian rhythms in mouse sexual behavior & potential  
+                    hypothalamic circuits modulating such behaviors".  
+                </p>  
+            </div>  
+        </div>  
+    </section>  
+    <!-- Poster Presentations End -->
+
+
+    <!-- Footer Start -->  
+    <section class="footer">  
+        <div class="footer-content">  
+            <div class="icons">  
+                <a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank"><i class="fa fa-linkedin"  
+                        aria-hidden="true"></i></a>  
+                <a href="https://github.com/evankeister?tab=repositories" target="_blank"><i class="fa fa-github"  
+                        aria-hidden="true"></i></a>  
+                <a href="https://www.researchgate.net/profile/Evan-Keister-2" target="_blank"><i  
+                        class="ai ai-researchgate" aria-hidden="true"></i></a>  
+                <a href="mailto:evankeister11@gmail.com" target="_blank"><i class="fa fa-envelope"  
+                        aria-hidden="true"></i></a>  
+            </div>  
+            <h5>evankeister11@gmail.com</h5>  
+        </div>  
+    </section>  
     <!-- Footer End -->
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+
+    <!-- JavaScript -->  
+    <script src="script.js"></script>  
 </body>
 
-</html>
+
+</html>  
