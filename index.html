@@ -1,385 +1,227 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300&display=swap"
-        rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>  
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Evan Keister</title>  
+    <link rel="stylesheet" href="style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link  
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"  
+        rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">  
 </head>
 
-<body class="main-body">
-    <!-- Header Start-->
-    <div class="home">
-        <section class="sub-header">
-            <div>
-                <nav>
-                    <a class="home-icon" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-                    <div class="nav-links" id="navLinks">
-                        <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"><a href=""></a></i>
-                        <ul>
-                            <li><a href="index.html" title="Home">Home</a></li>
-                            <li><a href="posterandpubs.html" title="Contact">Publications</a></li>
-                            <li><a href="portfolio.html" title="Contact">CS Portfolio</a></li>
-                            <li><a href="contact.html" title="Contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
-                </nav>
-                <div class="header-content">
-                    <h1>Hello, I'm <span>Evan Keister</span></h1>
-                    <p>Recent graduate from Northeastern University earning a B.S. in Behavioral Neuroscience and a minor in Computer Science.
-                    </p>
-                    <p>
-                        Currently, I am a Research Fellow at Lenox Hill Hospital in the Department of Neurosurgery working with Dr. John Boockvar.
-                    </p>
-                    <a href="contact.html" class="hero-btn">Contact Me &rarr;</a>
-                    <!-- <a href="files/EvanKeister_CV.pdf" target="_blank" class="hero-btn last">Download
-                        Resume</a> -->
-                </div>
-            </div>
-        </section>
+<body>
+
+    <!-- ========== HERO SECTION ========== -->  
+    <div class="hero">  
+        <section class="hero-inner">  
+            <nav>  
+                <a class="nav-logo" href="#hero">EK</a>  
+                <div class="nav-links" id="navLinks">  
+                    <ul>  
+                        <li><a href="#hero">Home</a></li>  
+                        <li><a href="#about">About</a></li>  
+                        <li><a href="#publications">Publications</a></li>  
+                        <li><a href="#contact">Contact</a></li>  
+                    </ul>  
+                </div>  
+                <button class="nav-toggle" aria-label="Toggle navigation">  
+                    <i class="fa-solid fa-bars"></i>  
+                </button>  
+            </nav>
+
+            <div class="hero-content">  
+                <div class="hero-text">  
+                    <h1>Hello, I'm Evan Keister</h1>  
+                    <p>Neurosurgery Clinical Research Assistant at Lenox Hill Hospital,  
+                        recent <em>summa cum laude</em> graduate from Northeastern University,  
+                        passionate about advancing patient care through innovation, rigorous  
+                        research, and a holistic understanding of how disease affects the  
+                        whole person.</p>  
+                    <div class="hero-buttons">  
+                        <a href="#personal" class="hero-btn">Learn More ↓</a>  
+                        <a href="#contact" class="hero-btn hero-btn-outline">Contact Me →</a>  
+                    </div>  
+                </div>  
+                <div class="hero-image">  
+                    <img src="images/hero.jpg" alt="Evan Keister at Lenox Hill Hospital">  
+                </div>  
+            </div>  
+        </section>  
     </div>
-    <!-- Header End-->
 
-    <!-- Pictures Start -->
-    <section class="courses">
-        <div class="outer-row">
-            <h3>A Little About Me:</h3>
-                <div class="row">
-                    <div class="courses-col">
-                        <div class="layer">
-                            <h3>I enjoy long-distance running.<br>
-                            </h3>
-                        </div>
-                        <div class="course-image">
-                            <h2></h2>
-                            <img src="images/BOSTON_MARATHON_V1.jpg">
-                        </div>
-                    </div>
-                    <div class="courses-col">
-                        <div class="layer">
-                            <h3>I'm a huge NBA fan, and enjoy playing basketball.<br></h3>
-                        </div>
-                        <div class="course-image">
-                            <h2></h2>
-                            <img src="images/NETS.jpg">
-                        </div>
-                    </div>
-                    <div class="courses-col">
-                        <div class="layer">
-                            <h3>Fun Fact: I met Donald Glover at <br>
-                                Fisherman's Beach on Nantucket.<br>
-                            I also love reading, playing games, and <br>
-                            relaxing on the beach!</h3>
-                        </div>
-                        <div class="course-image">
-                            <h2></h2>
-                            <img src="images/Glover.jpeg">
-                        </div>
-                    </div>
-                </div>
-        </div>
+    <!-- ========== A LITTLE ABOUT ME SECTION ========== -->  
+    <section class="personal" id="personal">  
+        <div class="section-wrapper">  
+            <h1>A Little About Me</h1>  
+            <div class="personal-grid">  
+                <div class="personal-card">  
+                    <div class="personal-image">  
+                        <img src="images/BOSTON_MARATHON_V1.jpg" alt="Boston Marathon">  
+                    </div>  
+                    <div class="personal-overlay">  
+                        <h3>I love long-distance running</h3>  
+                    </div>  
+                </div>  
+                <div class="personal-card">  
+                    <div class="personal-image">  
+                        <img src="images/NETS.jpg" alt="Brooklyn Nets game">  
+                    </div>  
+                    <div class="personal-overlay">  
+                        <h3>I'm a huge NBA fan and enjoy playing basketball</h3>  
+                    </div>  
+                </div>  
+                <div class="personal-card">  
+                    <div class="personal-image">  
+                        <img src="images/Glover.jpeg" alt="Exploring NYC">  
+                    </div>  
+                    <div class="personal-overlay">  
+                        <h3>I love exploring NYC</h3>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
     </section>
-    <!-- Pictures End -->
 
-    <!-- Education Start -->
-    <section class="work">
-        <h1 class="title">Education</h1>
-            <div class="work-col">
-                <h2>Northeastern University (2021 - 2025)</h2>
-                <h2><em>summa cum laude</em></h2>
-                <h2>B.S. Behavioral Neuroscience (Honors in the Discipline), Minor in Computer Science</h2>
-               <img src="images/neu_mask.png" width="400">
-            </div>
+    <!-- ========== WORK EXPERIENCE SECTION ========== -->  
+    <section class="about" id="about">  
+        <div class="section-wrapper">  
+            <h1>Work Experience</h1>  
+            <div class="about-cta">  
+                <p>For a complete overview of my experience, education, and activities:</p>  
+                <a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank" class="hero-btn">  
+                    <i class="fa-brands fa-linkedin"></i> View Full Profile on LinkedIn</a>  
+            </div>  
+        </div>  
     </section>
-    <!-- Education End -->  
 
-    <!-- Work Experience Start -->
-    <section class="work">
-        <h1>Work Experience</h1>
-        <div class="row">
-            <div class="work-col">
-                <h2>Neurosurgery Clinical Research Fellow at Lenox Hill Hospital</h2>
-                <h3>Lenox Hill Hospital | New York, NY | July 2025 - Present</h3>
-                <img src="images/Lenox Hill.png" width="280">
-                <hr>
-                <p>
-                    Working under Dr. John Boockvar, renowned neurosurgeon featured in the Netflix docuseries "Lenox Hill" and "Emergency NYC." 
-                    Coordinating weekly Multidisciplinary Brain and Spine Tumor Review Board, facilitating collaboration among neurosurgeons, oncologists, pathologists, and radiologists to optimize patient treatment plans. 
-                    Onboarding, supervising, and scheduling student observers. Shadowing physicians in OR procedures, outpatient consultations, and rounds. Contributing to clinical research projects.
-                </p>
-            </div>
-             <div class="work-col">
-                <h2>Thoracic Surgery Research Assistant</h2>
-                <h3>Tufts Medical Center | Boston, MA | January 2025 - Present</h3>
-                <img src="images/Tufts_mask1.png" width="280">
-                <hr>
-                <p> Contributing to the development of artificial intelligence models aimed at improving surgical training, 
-                    intraoperative decision-making, and patient outcomes. Using the MOSaiC Annotation Platform 
-                    to create annotated datasets of thoracic surgery procedures.
-                </p>
-            </div>
-            <div class="work-col">
-                <h2>Research Assistant at the Saper Lab</h2>
-                <h3>Beth Israel Deaconess Medical Center and Harvard Medical School | Boston, MA | January 2024 - May 2025</h3>
-                <img src="images/bidmc_crop.png" width="280">
-                <img src="images/hms_blank.png" width="280">
-                <hr>
-                <p>Conducted research with postdoc Sydney Aten, PhD, in the lab of Clifford Saper, MD, PhD.
-                    Investigated a hypothalamic circuit that potentially regulates the circadian rhythm of sexual behavior in mice, 
-                    and examined the effects of sleep and body temperature on fertility.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="work-col">
-                <h2>Research Assistant Co-op at the Fishell Lab</h2>
-                <h3>Broad Institute of MIT and Harvard | Boston, MA | July 2024 - December 2024</h3>
-                <img src="images/broad.png" width="280">
-                <img src="images/hms_blank.png" width="280">
-                <hr>
-                <p>Conducted research with Chen-Yu Wang, MD, PhD, in the Fishell Lab at the Stanley Center for Psychiatric Research. 
-                    Studied the effects of transcription factor knockout on cortical interneuron development.
-                </p>
-            </div>
-            <div class="work-col">
-                <h2>Medicinal Chemistry Co-op at the Laboratory for Drug Discovery in Neuroscience</h2>
-                <h3>Brigham and Women's Hospital and Harvard Medical School | Boston, MA |  July 2023 - December 2023</h3>
-                <img src="images/brigham_mask.png" width="280">
-                <img src="images/hms_blank.png" width="280">
-                <hr>
-                <p>Conducted drug discovery research under principal investigator Kevin Hodgetts, PhD, at the Laboratory for Drug Discovery in 
-                    Neuroscience (LDDN). Focused on novel central nervous system (CNS) therapeutics 
-                    for Alzheimer’s Disease, Migraine, and Essential Tremor.
-                </p>
-            </div>
-            <div class="work-col">
-                <h2>Organic Chemistry II Teaching Assistant</h2>
-                <h3>Northeastern University | Boston, MA | Fall 2023</h3>
-                <img src="images/neu_mask.png" width="280">
-                <hr>
-                <p>Led weekly office hours and review sessions to aid over 300 students taking Organic Chemistry II.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="work-col">
-                <h2>Discrete Structures Teaching Assistant</h2>
-                <h3>Northeastern University | Boston, MA | Spring 2023 </h3>
-                <img src="images/neu_mask.png" width="280">
-                <hr>
-                <p> Guided students in learning the foundational underpinnings of mathematics used for 
-                    computer science.
-                </p>
-            </div>
-            <div class="work-col">
-                <h2>Fundamentals of Computer Science I Teaching Assistant</h2>
-                <h3>Northeastern University | Boston, MA | Fall 2022</h3>
-                <img src="images/neu_mask.png" width="280">
-                <hr>
-                <p>Assisted a course with over 800 students. Debugged DrRacket programs, hosted office hours, graded assignments,
-                    and responded to various students inquiries on a Piazza forum.
-                </p>
-            </div>
-            <div class="work-col">
-                <h2>Mathematics Teaching Assistant</h2>
-                <h3>GST BOCES | Horseheads, NY | Summer 2022</h3>
-                <img src="images/gst_boces_mask.png" width="180">
-                <hr>
-                <p>
-                    Delivered one-on-one tutoring, ensuring personalized support for students with varying levels of understanding. 
-                    Developed and implemented practice exercises and interactive lessons to reinforce key math skills, 
-                    preparing students for a final exam essential to advancing to 8th grade.
-                </p>
-            </div>
-        </div>
+    <!-- ========== EDUCATION SECTION ========== -->  
+    <section class="education" id="education">  
+        <div class="section-wrapper">  
+            <h1>Education</h1>  
+            <div class="education-card">  
+                <img src="images/neu_mask.png" alt="Northeastern University" class="edu-logo">  
+                <div class="edu-text">  
+                    <h2>Northeastern University</h2>  
+                    <h3>Class of 2025 • <em>Summa Cum Laude</em></h3>  
+                    <p>B.S. Behavioral Neuroscience (Honors in the Discipline), Minor in Computer Science</p>  
+                </div>  
+            </div>  
+        </div>  
     </section>
-    <!-- Work Experience Start -->
 
-    <!-- Volunteer Experience Start -->
-    <section class="volunteer">
-        <h1>Volunteer Experience</h1>
-        <div class="row">
-            <div class="volunteer-col">
-                <h2>Volunteer EMT</h2>
-                <h3>NUEMS | Boston, MA | Fall 2022 - May 2025</h3>
-                <img src="images/NUEMS_mask1.png" width="120">
-                <hr>
-                <p>Provided pre-hospital emergency medical care at Northeastern University sporting events, ensuring timely assessment and treatment of injuries. 
-                    Administered first aid care, and coordinated with fellow EMTs to maintain a safe environment for attendees.</p> 
-            </div>
-            <div class="volunteer-col">
-                <h2>Volunteer</h2>
-                <h3>Boston Cares | Boston, MA | Fall 2022 - May 2025</h3>
-                <img src="images/boston_cares_mask.png" width="280">
-                <hr>
-                <p>Instructed students as part of the High School Equivalency Math Tutoring program at X-Cel Education, 
-                    helping them develop skills necessary to earn their GED. Provided personalized tutoring and support, 
-                    addressing individual learning needs and reinforcing key concepts such as algebra, geometry, and data analysis.</p>
-            </div>
-            <div class="volunteer-col">
-                <h2>Emergency Department Volunteer</h2>
-                <h3>Boston Children's Hospital | Boston, MA | June 2023 - December 2024</h3>
-                <img src="images/bch_mask1.png" width="220">
-                <hr>
-                <p>Assisted Child Life Specialists in engaging pediatric patients facing psychiatric challenges and extended wait times by 
-                    providing therapeutic activities, including board games and toys, to enhance comfort and reduce anxiety.
-                    </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="volunteer-col">
-                <h2>Hospital Volunteer</h2>
-                <h3>Guthrie Corning Hospital | Corning, NY | Fall & Spring 2019/2020</h3>
-                <img src="images/g1.png" width="220">
-                <hr>
-                <p>Greeted patients, families, and visitors, ensuring a positive hospital experience. 
-                    Provided clear directions to hospital departments and helped with wayfinding and logistics. Escorted patients to appointments.
-                </p>
-            </div>
-            <div class="volunteer-col">
-                <h2>Meals on Wheels</h2>
-                <h3>Corning Meals on Wheels | Corning, NY | Summer 2020</h3>
-                <img src="images/mow.png" width="140">
-                <hr>
-                <p>Delivered Meals to the homebound during the COVID-19 pandemic.
-                    Socialized and provided engagement with recipients.
-                </p>
-            </div>
-        </div>
-        
+    <!-- ========== PUBLICATIONS SECTION ========== -->  
+    <section class="publications" id="publications">  
+        <div class="section-wrapper">  
+            <h1>Publications</h1>  
+            <div class="pub-single">  
+                <div class="pub-card">  
+                    <div class="pub-icon">  
+                        <i class="ai ai-researchgate ai-3x"></i>  
+                    </div>  
+                    <h2>ResearchGate</h2>  
+                    <a href="https://www.researchgate.net/profile/Evan-Keister-2" target="_blank"  
+                        class="hero-btn"><i class="ai ai-researchgate"></i> Visit ResearchGate →</a>  
+                </div>  
+            </div>  
+        </div>  
     </section>
-    <!-- Volunteer Experience End -->
 
-    <!-- Certifications Start -->
-      <section class="work">
-        <h1 class="title">Licenses and Certifications</h1>
-        <div class="work-col">
-            <div>
-               <h2>EMT Basic | National EMS Institute</h2>
-               <img src="images/natems.png" width="280">
-            </div>
-        </div>
+    <!-- ========== CONTACT SECTION ========== -->  
+    <section class="contact" id="contact">  
+        <div class="section-wrapper">  
+            <h1>Get in Touch</h1>  
+            <p class="contact-subtitle">Feel free to reach out via email or connect with me on any of the platforms  
+                below.</p>  
+            <div class="contact-icons">  
+                <a href="mailto:evankeister11@gmail.com" target="_blank" title="Email">  
+                    <i class="fa-solid fa-envelope"></i>  
+                </a>  
+                <a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank" title="LinkedIn">  
+                    <i class="fa-brands fa-linkedin"></i>  
+                </a>  
+                <a href="https://www.researchgate.net/profile/Evan-Keister-2" target="_blank" title="ResearchGate">  
+                    <i class="ai ai-researchgate"></i>  
+                </a>  
+                <a href="https://github.com/evankeister?tab=repositories" target="_blank" title="GitHub">  
+                    <i class="fa-brands fa-github"></i>  
+                </a>  
+            </div>  
+            <p class="contact-email">evankeister11@gmail.com</p>  
+        </div>  
     </section>
-    <!-- Certifications End -->  
 
-    <!-- Shadowing Experience Start-->
-     <section class="volunteer">
-        <h1>Shadowing Experience</h1>
-        <div class="row">
-            <div class="volunteer-col">
-                <h2>Neurosurgery</h2>
-                <h3>Lenox Hill Hospital | New York, NY</h3>
-                <img src="images/Lenox Hill.png" width="280">
-                <hr>
-                <h4>Dr. Boockvar, Dr. Langer, Dr. D'Amico, and Dr. Ben-Shalom</h4>
-                <p>Shadowing in the outpatient clinic, inpatient rounds, and operating room, observing 
-                    neuro-oncology procedures (meningioma, glioma, etc.), VP shunts, and open vascular (AVM, cerebral bypass, etc.) procedures. 
-                </p>
-            </div>
-            <div class="volunteer-col">
-                <h2>Neurosurgery</h2>
-                <h3>Brigham and Women's Hospital | Boston, MA</h3>
-                <img src="images/brigham_mask.png" width="300">
-                <img src="images/hms_blank.png" width="270">
-                <hr>
-                <h4>Dr. Micheal Mooney - 40 hours</h4>
-                <p>Gained firsthand exposure to the clinical decision-making process and observed 
-                    advanced neurosurgical procedures, including craniotomies for meningioma resection 
-                    and complex spinal decompressions.</p>
-            </div>
-            <div class="volunteer-col">
-                <h2>Orthopedic Surgery</h2>
-                <h3>Arnot Hospital | Elmira, NY</h3>
-                <img src="images/arnot_mask.png" width="220">
-                <hr>
-                <h4>Dr. Bryan Jarvis - 30 hours</h4>
-                <p>Observed procedures including knee and hip arthroplasties, gaining insight into surgical techniques and patient care during joint replacement surgeries. 
-                    Attended clinic visits with patients, learning about pre-operative assessments, post-operative care, and the management of musculoskeletal conditions.</p>
-            </div>
-        </div>
-        <div class="row">
-             <div class="volunteer-col">
-                <h2>Radiology and Interventional Radiology</h2>
-                <h3>Guthrie Corning Hospital | Corning, NY</h3>
-                <img src="images/g1.png" width="250">
-                <hr>
-                <h4>Dr. Joseph Bifano, Dr. Sobieraj, and Dr. Masi - 50 hours</h4>
-                <p>Observed the interpretation of CT scans, MRIs, and X-rays across multiple specialties, including orthopedics, OBGYN, and neurology. 
-                    Observed lung and heart biopsy procedures, learning about the techniques and patient management involved in interventional radiology.</p>
-            </div>
-            <div class="volunteer-col">
-                <h2>Anesthesiology</h2>
-                <h3>Arnot Hospital | Elmira, NY</h3>
-                <img src="images/g1.png" width="200">
-                <hr>
-                <h4>Dr. Deluca & Dr. Kellner - 10 hours</h4>
-                <p>Observed the responsibilities involved in preparing patients for surgery and managing their care through the perioperative period. 
-                    Gained knowledge of drugs used to induce, maintain, and reverse anesthesia.</p>
-            </div>
-            <div class="volunteer-col">
-                <h2>General Surgery</h2>
-                <h3>Arnot Hospital | Elmira, NY</h3>
-                <img src="images/arnot_mask.png" width="220">
-                <hr>
-                <h4>Dr. Sadhasivam - 5 hours</h4>
-                <p>Observed robotic assisted umbilical and inguinal hernia repairs.</p>
-            </div>
-        </div>
-         <div class="row">
-            <div class="volunteer-col">
-                <h2>Gastroenterology</h2>
-                <h3>Guthrie Corning Hospital | Corning, NY</h3>
-                <img src="images/g1.png" width="220">
-                <hr>
-                <h4>Dr. Hathwar - 10 hours</h4>
-                <p>Observed a range of diagnostic procedures, including colonoscopies and endoscopies, 
-                    gaining firsthand insight into the evaluation of gastrointestinal conditions. 
-                    Learned about various GI disorders, including ulcerative colitis, irritable bowel syndrome, and gastroesophageal reflux disease.</p>
-            </div>
-            <div class="volunteer-col">
-                <h2>Endocrinology</h2>
-                <h3>Brigham and Women's Hospital and Harvard Medical School | Boston, MA</h3>
-                 <img src="images/brigham_mask.png" width="280">
-                <img src="images/hms_blank.png" width="280">
-                <hr>
-                <h4>Dr. Alexander - 2 hours</h4>
-                <p>Attended a lecture about acute kidney injury (AKI) for 3rd year 
-                    Harvard Medical School Students on their clinical rotations with Dr. Erik Alexander.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Shadowing Experience End -->
+    <!-- ========== FOOTER ========== -->  
+    <footer class="footer">  
+        <div class="footer-content">  
+            <div class="footer-icons">  
+                <a href="mailto:evankeister11@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>  
+                <a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank"><i  
+                        class="fa-brands fa-linkedin"></i></a>  
+                <a href="https://www.researchgate.net/profile/Evan-Keister-2" target="_blank"><i  
+                        class="ai ai-researchgate"></i></a>  
+                <a href="https://github.com/evankeister?tab=repositories" target="_blank"><i  
+                        class="fa-brands fa-github"></i></a>  
+            </div>  
+            <p>© 2025 Evan Keister. All rights reserved.</p>  
+        </div>  
+    </footer>
 
-    <!-- Footer Start -->
-    <section class="footer">
-        <div class="footer-content">
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/evan-keister-30a52422b/" target="_blank"><i class="fa fa-linkedin"
-                        aria-hidden="true"></i></a>
-                <a href="https://github.com/evankeister?tab=repositories" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i></a>
-                <a href="mailto:evankeister11@gmail.com" target="_blank"> <i class="fa fa-envelope"
-                        aria-hidden="true"></i></a>
-            </div>
-            <h5>evankeister11@gmail.com</h5>
-        </div>
-    </section>
-    <!-- Footer End -->
+    <!-- ========== JAVASCRIPT ========== -->  
+    <script>  
+        // Mobile nav toggle  
+        const navToggle = document.querySelector('.nav-toggle');  
+        const navLinks = document.getElementById('navLinks');
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+        navToggle.addEventListener('click', () => {  
+            navLinks.classList.toggle('active');  
+            const icon = navToggle.querySelector('i');  
+            icon.classList.toggle('fa-bars');  
+            icon.classList.toggle('fa-xmark');  
+        });
+
+        // Close menu on link click (mobile)  
+        document.querySelectorAll('.nav-links a').forEach(link => {  
+            link.addEventListener('click', () => {  
+                navLinks.classList.remove('active');  
+                const icon = navToggle.querySelector('i');  
+                icon.classList.add('fa-bars');  
+                icon.classList.remove('fa-xmark');  
+            });  
+        });
+
+        // Smooth scroll  
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {  
+            anchor.addEventListener('click', function (e) {  
+                e.preventDefault();  
+                const target = document.querySelector(this.getAttribute('href'));  
+                if (target) {  
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });  
+                }  
+            });  
+        });
+
+        // Fade-in on scroll  
+        const observer = new IntersectionObserver((entries) => {  
+            entries.forEach(entry => {  
+                if (entry.isIntersecting) {  
+                    entry.target.classList.add('visible');  
+                }  
+            });  
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.pub-card, .personal-card, .education-card, .contact-icons, .about-cta').forEach(el => {  
+            el.classList.add('fade-in');  
+            observer.observe(el);  
+        });  
+    </script>
+
 </body>
 
-</html>
+</html>  
